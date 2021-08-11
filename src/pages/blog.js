@@ -44,7 +44,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			blogs: blogs,
+			blogs: JSON.parse(JSON.stringify(orderedBlogs)),
 		},
 	};
 }
