@@ -6,7 +6,7 @@ const Blog = (props) => {
 	return (
 		<>
 			<h1>ブログページ</h1>
-			{props.blogsmap((blog, index) => (
+			{props.blogs.map((blog, index) => (
 				<div key={index}>
 					<h3>{blog.frontmatter.title}</h3>
 					<p>{blog.frontmatter.date}</p>
